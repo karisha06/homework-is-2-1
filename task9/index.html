@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="main.css"> 
+    <script src="main.js"></script> 
+    <title>Contract Management System</title> 
+</head> 
+ 
+<body> 
+    <div class="container"> 
+        <h1>Добавить контракт</h1> 
+        <input type="text" id="contractNumber" placeholder="Номер контракта"> 
+        <input type="date" id="contractDate" placeholder="Дата"> 
+        <input type="text" id="contractDescription" placeholder="Описание"> 
+        <select id="contractStatus"> 
+            <option value="Активен">Активен</option> 
+            <option value="Неактивен">Неактивен</option> 
+        </select> 
+        <input type="file" id="contractImage"> 
+        <button onclick="addContract()">Добавить контракт</button> 
+    </div> 
+ 
+    <div id="contractList" class="container"></div> 
+</body> 
+</html>
